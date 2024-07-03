@@ -35,8 +35,13 @@ A aplicação permite que o usuário insira números e operadores, exiba o resul
 
 ## Capturas de Tela
 
-![Tela inicial](screenshots/tela-inicial.png)
-![Calculadora em uso](screenshots/calculadora-em-uso.png)
+![Tela inicial](calculadora-inicial.png)
+![Calculadora em uso](calculadora-em-uso.png)
+
+## Futuras Correções
+
+- **Excesso de Dígitos**: O CSS da calculadora deforma conforme excesso de dígitos.
+![Erro](calculadora-erro.png)
 
 ## Licença
 
