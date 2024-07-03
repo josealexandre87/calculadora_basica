@@ -16,20 +16,20 @@ A aplicação permite que o usuário insira números e operadores, exiba o resul
 
 1. Clone o repositório:
     ```sh
-    git clone https://github.com/seu-usuario/calculadora-basica.git
+    git clone hhttps://github.com/josealexandre87/calculadora_basica.git
     ```
 2. Navegue até o diretório do projeto:
     ```sh
-    cd calculadora-basica
+    cd calculadora_basica
     ```
 3. Abra o arquivo `index.html` no seu navegador preferido.
 
 ## Funcionalidades
 
-- **Adição**: Realiza a soma de dois ou mais números.
-- **Subtração**: Realiza a subtração de dois ou mais números.
-- **Multiplicação**: Realiza a multiplicação de dois ou mais números.
-- **Divisão**: Realiza a divisão de dois ou mais números.
+- **Adição**
+- **Subtração**
+- **Multiplicação**
+- **Divisão**
 - **Limpar**: Limpa o display da calculadora.
 - **Excluir Último Dígito**: Remove o último dígito ou operador inserido.
 
@@ -40,7 +40,8 @@ A aplicação permite que o usuário insira números e operadores, exiba o resul
 
 ## Futuras Correções
 
-- **Excesso de Dígitos**: O CSS da calculadora deforma conforme excesso de dígitos.
+- **Excesso de Dígitos**: A CSS da calculadora deforma conforme excesso de dígitos.
+
 ![Erro](calculadora-erro.png)
 
 ## Licença
