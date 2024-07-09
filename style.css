@@ -1,54 +1,90 @@
-/* style.css */
-
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+  display: flex; /* Usa Flexbox para alinhar o conteúdo centralmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: 100vh; /* Define a altura do corpo como a altura da viewport */
+  background-color: #282c34; /* Define a cor de fundo como um tom escuro */
+  margin: 0; /* Remove a margem padrão do corpo */
 }
 
-.calculator {
-  background-color: #333;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+.calculadora {
+  background-color: #3a3a3a; /* Define a cor de fundo da calculadora */
+  padding: 20px; /* Adiciona espaçamento interno ao redor da calculadora */
+  border-radius: 10px; /* Adiciona cantos arredondados à calculadora */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao redor da calculadora */
+}
+/*ID display*/
+#display {
+  width: 100%; /* Define a largura do display como 100% do contêiner */
+  height: 60px; /* Define a altura do display */
+  font-size: 24px; /* Define o tamanho da fonte do texto no display */
+  margin-bottom: 10px; /* Adiciona espaçamento abaixo do display */
+  text-align: right; /* Alinha o texto à direita */
+  padding-right: 10px; /* Adiciona espaçamento interno à direita do display */
+  border: none; /* Remove a borda padrão do display */
+  border-radius: 5px; /* Adiciona cantos arredondados ao display */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+  overflow: hidden; /* Esconde o conteúdo que excede a área do display */
+  text-overflow: ellipsis; /* Adiciona "..." ao final do texto que não cabe no display */
+  white-space: nowrap; /* Impede a quebra de linha dentro do display */
+  background-color: #282c34; /* Define a cor de fundo do display */
+  color: #fff; /* Define a cor do texto do display */
 }
 
-.display {
-  background-color: #222;
-  color: #0f0;
-  font-size: 2em;
-  text-align: right;
-  padding: 20px;
+.botoes {
+  display: grid; /* Usa Grid Layout para dispor os botões */
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Cria quatro colunas de largura igual */
+  gap: 10px; /* Adiciona espaçamento entre os botões */
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
+button {
+  height: 60px; /* Define a altura dos botões */
+  font-size: 24px; /* Define o tamanho da fonte nos botões */
+  background-color: #4a4a4a; /* Define a cor de fundo dos botões */
+  color: #fff; /* Define a cor do texto dos botões */
+  border: none; /* Remove a borda padrão dos botões */
+  border-radius: 5px; /* Adiciona cantos arredondados aos botões */
+  cursor: pointer; /* Define o cursor como ponteiro ao passar sobre os botões */
+  outline: none; /* Remove o contorno dos botões ao focar */
+  transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
 }
 
-.btn {
-  background-color: #555;
-  color: white;
-  border: none;
-  padding: 20px;
-  font-size: 1.5em;
-  cursor: pointer;
-  transition: background-color 0.3s;
+button:hover {
+  background-color: #5a5a5a; /* Muda a cor de fundo ao passar o mouse sobre o botão */
 }
 
-.btn:hover {
-  background-color: #666;
+button:active {
+  background-color: #6a6a6a; /* Muda a cor de fundo ao clicar no botão */
 }
 
-.orange {
-  background-color: orange;
-  color: white;
+button.zero {
+  grid-column: span 2; /* Faz o botão "0" ocupar duas colunas */
 }
 
-.orange:hover {
-  background-color: darkorange;
+button.equals {
+  background-color: orange; /* Define a cor de fundo do botão "=" */
+  color: #000; /* Define a cor do texto do botão "=" */
+}
+
+button.equals:hover {
+  background-color: darkorange; /* Muda a cor de fundo ao passar o mouse sobre o botão "=" */
+}
+
+.btn-func {
+  background-color: #ff6347; /* Define a cor de fundo dos botões de função (clear, backspace) */
+}
+
+.btn-func:hover {
+  background-color: #ff4500; /* Muda a cor de fundo ao passar o mouse sobre os botões de função */
+}
+
+.btn-operator {
+  background-color: #87cefa; /* Define a cor de fundo dos botões de operador (+, -, *, /) */
+}
+
+.btn-operator:hover {
+  background-color: #4682b4; /* Muda a cor de fundo ao passar o mouse sobre os botões de operador */
 }
